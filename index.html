@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Easy - Home</title>
+  
+
+  <!-- <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/201/201623.png" type="image/png"> -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Travel Easy</div>
+    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Plan Your Trip Easily</h1>
+      <p>Discover seamless bus booking with comfort and convenience.</p>
+      <a href="#trip">Book Now</a>
+    </div>
+  </section>
+  
+
+    <div class="trip-search" id="trip">
+<form action="#" method="get" >
+ 
+  <h2>Search Your Trip:</h2><br>
+  <!-- <input type="date"> -->
+   <label for="trip-date"></label>
+<input type="date" id="trip-date" name="trip-date" required>
+  <select id="routes" name="routes" onchange="if(this.value) window.location.href=this.value;">
+    <option value="">select your routes</option>
+    <option value="available_ahm_sur.html">Ahmedabad to Surat</option>
+    <option value="available_ahm_bha.html">Ahmedabad to Bhavnagar</option>
+    <option value="available_ahm_nav.html">Ahmedabad to Navsari</option>
+    <option value="available_ahm_bay.html">Ahmedabad to Bayad</option>
+    <option value="available_ahm_vad.html">Ahmedabad to Vadodra</option>
+    <option value="available_ahm_gan.html">Ahmedabad to Gandhinagar</option>
+    <option value="available_ahm_jam.html">Ahmedabad to Jamnagar</option>
+    <option value="available_ahm_val.html">Ahmedabad to Valsad</option>
+    <option value="available_ahm_mod.html">Ahmedabad to Modasa</option>
+   
+  </select> 
+  
+ 
+</form>
+</div>  
+
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="section-boxes">
+      <div class="card"><i class="fas fa-bus"></i><h3>Comfortable Buses</h3><p>Travel in style and comfort.</p></div>
+      <div class="card"><i class="fas fa-ticket-alt"></i><h3>Easy Booking</h3><p>Book your seat in seconds.</p></div>
+      <div class="card"><i class="fas fa-clock"></i><h3>On-time Service</h3><p>Always on schedule.</p></div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="section-boxes">
+      <div class="feature-card"><i class="fas fa-user-shield"></i><h3>Safe Travel</h3><p>Top priority to passenger safety.</p></div>
+      <div class="feature-card"><i class="fas fa-headset"></i><h3>24/7 Support</h3><p>We're here anytime.</p></div>
+      <div class="feature-card"><i class="fas fa-map-marked-alt"></i><h3>Wide Network</h3><p>Connected to major destinations.</p></div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="section-boxes">
+      <div class="testimonial-card"><i class="fas fa-smile"></i><p>"Excellent service, on-time and clean buses!"</p><strong>- Dirgh</strong></div>
+      <div class="testimonial-card"><i class="fas fa-thumbs-up"></i><p>"Booking was super easy and the ride was smooth."</p><strong>- Parthvi</strong></div>
+      <div class="testimonial-card"><i class="fas fa-heart"></i><p>"Friendly staff and very helpful during the trip."</p><strong>- Mahim</strong></div>
+      <div class="testimonial-card"><i class="fas fa-star"></i><p>"Friendly staff and very helpful during the trip."</p><strong>- Yashvi</strong></div>
+    </div>
+  </section>
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest travel news and offers.</p>
+  
+    <form action="#popup" class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    
+   
+    <div id="popup" class="popup-box">
+      <div class="popup-content">
+        <h3>Thank You!</h3>
+        <p>You have successfully subscribed to our newsletter.</p>
+        <a href="#" class="close-btn">Close</a>
+      </div>
+    </div>
+    
+  </section>
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    
+    <form action="#contact-popup" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <!-- Contact Popup -->
+    <div id="contact-popup" class="popup-box">
+      <div class="popup-content">
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out to us. We'll get back to you soon.</p>
+        <a href="#" class="close-btn">Close</a>
+      </div>
+    </div>
+    
+  </section>
+  <div class="chat-btn">
+    <i class="fas fa-comment"></i>
+  </div>
+
+
+  <footer style="background: linear-gradient(90deg, #34495e, #2c3e50); color: white; padding: 40px 20px; text-align: center;">
+    <div style="max-width: 1000px; margin: auto;">
+      <h3 style="margin-bottom: 20px; font-size: 1.8em;">Travel Easy</h3>
+      <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1em; line-height: 1.6;">
+        Experience hassle-free journeys with Travel Easy. Your comfort is our priority.
+      </p>
+      <div style="margin-bottom: 20px;">
+        <a href="#" style="margin: 0 15px; color: #ffa15f; text-decoration: none;">Home</a>
+        <a href="#services" style="margin: 0 15px; color: #ffa15f; text-decoration: none;">Services</a>
+        <a href="#testimonials" style="margin: 0 15px; color: #ffa15f; text-decoration: none;">Testimonials</a>
+        <a href="#contact" style="margin: 0 15px; color: #ffa15f; text-decoration: none;">Contact</a>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <a href="#"><i class="fab fa-facebook-f" style="color: white; margin: 0 10px;"></i></a>
+        <a href="#"><i class="fab fa-twitter" style="color: white; margin: 0 10px;"></i></a>
+        <a href="#"><i class="fab fa-instagram" style="color: white; margin: 0 10px;"></i></a>
+      </div>
+      <p style="font-size: 0.9em; color: #ccc;">&copy; 2025 Travel Easy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
