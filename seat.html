@@ -120,9 +120,9 @@
     }
 
     .selected { background-color: lightgreen; }
-    .booked { background-color: gray; }
+    .booked { background-color: gray;  pointer-events: none; }
    
-    .booked-ladies { background-color: pink; }
+    .booked-ladies { background-color: pink; pointer-events: none; }
     .empty { background-color: white; }
 
     .bus-layout {
@@ -215,13 +215,14 @@
           <label><input type="checkbox" name="seat" value="1A"><div class="seat-shape"></div>1A</label>
         </div>
         <div class="seat">
-          <label><input type="checkbox" name="seat" value="2A" class="booked"><div class="seat-shape"></div>2A</label>
+          <label><type="checkbox" name="seat" value="2A"><div class="seat-shape booked"></div>2A</label>
+
         </div>
         <div class="seat">
-          <label><input type="checkbox" name="seat" value="3A" class="booked-ladies"><div class="seat-shape"></div>3A</label>
+          <label><type="checkbox" name="seat" value="3A"><div class="seat-shape booked-ladies"></div>3A</label>
         </div>
         <div class="seat">
-          <label><input type="checkbox" name="seat" value="4A" class="booked-ladies"><div class="seat-shape"></div>4A</label>
+          <label><type="checkbox" name="seat" value="4A"><div class="seat-shape booked-ladies"></div>4A</label>
         </div>
         <div class="seat">
             <label><input type="checkbox" name="seat" value="5A"><div class="seat-shape"></div>5A</label>
@@ -230,16 +231,18 @@
             <label><input type="checkbox" name="seat" value="6A" class="seat-shape"><div class="seat-shape"></div>6A</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="7A" class="booked"><div class="seat-shape"></div>7A</label>
+            <label><type="checkbox" name="seat" value="7A"><div class="seat-shape booked"></div>7A</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="8A" class="booked-ladies"><div class="seat-shape"></div>8A</label>
+            <label><type="checkbox" name="seat" value="8A"><div class="seat-shape booked-ladies"></div>8A</label>
           </div>
           <div class="seat">
             <label><input type="checkbox" name="seat" value="9A"><div class="seat-shape"></div>9A</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="10A" class="booked"><div class="seat-shape"></div>10A</label>
+            <label><type="checkbox" name="seat" value="10A"><div class="seat-shape booked"></div>10A</label>
+
           </div>
           <div class="seat">
             <label><input type="checkbox" name="seat" value="11A"><div class="seat-shape"></div>11A</label>
@@ -251,30 +254,32 @@
             <label><input type="checkbox" name="seat" value="13A"><div class="seat-shape"></div>13A</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="14A" class="booked"><div class="seat-shape"></div>14A</label>
+            <label><type="checkbox" name="seat" value="14A"><div class="seat-shape booked"></div>14A</label>
+
           </div>
           <div class="seat">
             <label><input type="checkbox" name="seat" value="15A"><div class="seat-shape"></div>15A</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="16A" class="booked-ladies"><div class="seat-shape"></div>16A</label>
+            <label><type="checkbox" name="seat" value="16A"><div class="seat-shape booked-ladies"></div>16A</label>
           </div>
           <div class="seat">
             <label><input type="checkbox" name="seat" value="17A"><div class="seat-shape"></div>17A</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="18A" class="booked"><div class="seat-shape"></div>18A</label>
+            <label><type="checkbox" name="seat" value="18A"><div class="seat-shape booked"></div>18A</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="19A" class="booked-ladies"><div class="seat-shape"></div>19A</label>
+            <label><type="checkbox" name="seat" value="19A"><div class="seat-shape booked-ladies"></div>19A</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="20A" class="booked-ladies"><div class="seat-shape"></div>20A</label>
+            <label><type="checkbox" name="seat" value="20A"><div class="seat-shape booked-ladies"></div>20A</label>
           </div>
           
       </div>
 
-      <!-- Aisle -->
+      
       <div class="aisle"></div>
 
       <!-- Right Column -->
@@ -286,58 +291,64 @@
           <label><input type="checkbox" name="seat" value="2B"><div class="seat-shape"></div>2B</label>
         </div>
         <div class="seat">
-            <label><input type="checkbox" name="seat" value="4A" class="booked-ladies"><div class="seat-shape"></div>3B</label>
+          <label><type="checkbox" name="seat" value="3B"><div class="seat-shape booked-ladies"></div>3B</label>
         </div>
         <div class="seat">
           <label><input type="checkbox" name="seat" value="4B"><div class="seat-shape"></div>4B</label>
         </div>
         <div class="seat">
-            <label><input type="checkbox" name="seat" value="3A" class="booked"><div class="seat-shape"></div>5B</label>
+          <label><type="checkbox" name="seat" value="5B"><div class="seat-shape booked"></div>5B</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="18A" class="booked"><div class="seat-shape"></div>6B</label>
+            <label><type="checkbox" name="seat" value="6B"><div class="seat-shape booked"></div>6B</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="19A" class="booked-ladies"><div class="seat-shape"></div>7B</label>
+            <label><type="checkbox" name="seat" value="7B"><div class="seat-shape booked-ladies"></div>7B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="18A" class="booked"><div class="seat-shape"></div>8B</label>
+            <label><type="checkbox" name="seat" value="8B"><div class="seat-shape booked"></div>8B</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="19A" class="booked-ladies"><div class="seat-shape"></div>9B</label>
+            <label><type="checkbox" name="seat" value="9B"><div class="seat-shape booked-ladies"></div>9B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="2B"><div class="seat-shape"></div>10B</label>
+            <label><input type="checkbox" name="seat" value="10B"><div class="seat-shape"></div>10B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="3A" class="booked"><div class="seat-shape"></div>11B</label>
+            <label><type="checkbox" name="seat" value="11B"><div class="seat-shape booked"></div>11B</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="4A" class="booked-ladies"><div class="seat-shape"></div>12B</label>
+            <label><type="checkbox" name="seat" value="12B"><div class="seat-shape booked-ladies"></div>12B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="1B"><div class="seat-shape"></div>13B</label>
+            <label><input type="checkbox" name="seat" value="13B"><div class="seat-shape"></div>13B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="3A" class="booked"><div class="seat-shape"></div>14B</label>
+            <label><type="checkbox" name="seat" value="14B"><div class="seat-shape booked"></div>14B</label>
+
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="4A" class="booked-ladies"><div class="seat-shape"></div>15B</label>
+            <label><type="checkbox" name="seat" value="15B"><div class="seat-shape booked-ladies"></div>15B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="4B"><div class="seat-shape"></div>16B</label>
+            <label><input type="checkbox" name="seat" value="16B"><div class="seat-shape"></div>16B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="1B"><div class="seat-shape"></div>17B</label>
+            <label><input type="checkbox" name="seat" value="17B"><div class="seat-shape"></div>17B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="2B"><div class="seat-shape"></div>18B</label>
+            <label><input type="checkbox" name="seat" value="18B"><div class="seat-shape"></div>18B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="3B"><div class="seat-shape"></div>19B</label>
+            <label><input type="checkbox" name="seat" value="19B"><div class="seat-shape"></div>19B</label>
           </div>
           <div class="seat">
-            <label><input type="checkbox" name="seat" value="3A" class="booked"><div class="seat-shape"></div>20B</label>
+            <label><type="checkbox" name="seat" value="20B"><div class="seat-shape booked"></div>20B</label>
+
           </div>
       </div>
       
